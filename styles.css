@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-auto-rows: 50px;
+    padding: 10px;
+    background-color: rgb(131, 131, 131);
+    width: 330px;
+    border-radius: 5px;
+    border: 2px solid;
+    gap: 10px;
+    padding-bottom: 15px;
+    box-shadow: 0 7px rgb(73, 73, 73);
+}
+
+.naught {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.buttonGrid-item {
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.display {
+    background-color: rgb(223, 222, 222);
+    color: black;
+    font-size: 44px;
+    text-align: right;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    border: 2px solid;
+    padding-right: 10px;
+}
+
+#num {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 5px rgb(73, 73, 73);
+}
+
+#num:active {
+    background-color: #ababab;
+    box-shadow: 0 1px rgb(73, 73, 73);
+    transform: translateY(3px);
+}
+
+#op {
+    background-color: rgb(81, 192, 251);
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 5px rgb(73, 73, 73);
+}
+
+#op:active {
+    background-color: rgb(52, 119, 155);
+    box-shadow: 0 1px rgb(73, 73, 73);
+    transform: translateY(3px);
+}
+
+#aux {
+    background-color: rgb(63, 124, 254);
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 5px rgb(73, 73, 73);
+}
+
+#aux:active {
+    background-color: rgb(39, 76, 157);
+    box-shadow: 0 1px rgb(73, 73, 73);
+    transform: translateY(3px);
+}
